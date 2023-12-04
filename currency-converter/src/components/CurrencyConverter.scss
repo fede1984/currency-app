@@ -1,0 +1,168 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+.currency-converter {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0px;
+
+    &__header {
+        width: 100vw;
+        background-image: url("../assets/images/currencies.webp");
+        height: 31vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white !important;
+        font-size: 50px;
+        margin: 0;
+        background-size: cover;
+        font-weight: lighter;
+    }
+
+    &__content-container {
+        display: flex;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    &__input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        height: 33vh;
+        margin-left: 2.5vw;
+        border-radius: 53%;
+        margin-right: 2.5vw;
+
+        &.amount {
+            background-color: #3498db;
+        }
+
+        &.from {
+            background-color: #9a9aff;
+        }
+
+        &.to {
+            background-color: #2ecc71;
+        }
+
+        &__label {
+            margin-bottom: 5px;
+            color: #3498db;
+            font-size: 40px;
+            color: #fefefe;
+            font-weight: 700;
+        }
+
+        &__input,
+        &__select {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            width: 10vw;
+            font-size: 33px;
+            text-align: center;
+        }
+
+        &__result-text {
+            font-size: 40px;
+            font-weight: 700;
+            color: dimgrey;
+        }
+    }
+
+    &__invert-button {
+        background-color: white;
+        position: absolute;
+        left: 48vw;
+        height: 8vh;
+        width: 4vw;
+        border: none;
+        color: #4e5656;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 1000px) {
+        &__header {
+            height: 20vh;
+        }
+
+        &__content-container {
+            flex-direction: column;
+            height: 80vh;
+        }
+
+        &__input-container {
+            width: 55vw;
+            height: 33vh;
+            margin-top: 2.5vh;
+            border-radius: 0%;
+
+            &__input,
+            &__select {
+                width: 45vw;
+            }
+
+        }
+
+        &__invert-button{
+            transform: rotate(90deg);
+            left: 46vw;
+            top: 58%;
+            height: 83px;
+            width: 61px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+        }
+
+        ont-size: 31px;
+        color: #fefefe;
+        font-weight: 700;
+
+    @media (max-width: 600px) {
+
+        &__header {
+            height: 15vh;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+    
+        &__input-container {
+            &__label {
+                font-size: 30px;
+                font-weight: 700;
+            }
+            &__input,
+            &__select {
+                font-size: 31px;
+            }
+
+        }
+
+        &__invert-button{
+            transform: rotate(90deg);
+            left: 44.5vw;
+            top: 53%;
+            height: 53px;
+            width: 45px;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+}
+}
